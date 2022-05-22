@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { MouseEventHandler, useCallback } from 'react'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -20,10 +21,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="" />
       </Head>
 
-      <Flex height="100vh" alignItems="center" justifyContent="center">
+      <Flex height="90vh" alignItems="center" justifyContent="center" marginX={4}>
         <Flex direction="column" backgroundColor="gray.200" p={12} rounded={6} >
-          <Heading mb={6}>
-            Calculadora de notas
+          <Heading mb={6} textAlign='center'>
+            Calculadora de Notas
           </Heading>
           <Button 
             onClick={() => handleMouseEvent('baiana')} 
@@ -42,9 +43,8 @@ const Home: NextPage = () => {
             Senai
           </Button>
         </Flex>
-
       </Flex>
-       
+      <Footer />
     </div>
   )
 }

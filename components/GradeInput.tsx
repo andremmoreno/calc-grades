@@ -21,7 +21,7 @@ const GradeInput: React.FC<Props> = ({
       <NumberInput 
         onChange={handleChange}
         focusInputOnChange
-        inputMode='tel'
+        inputMode='none'
         defaultValue={6}
         precision={2}
         step={0.1}

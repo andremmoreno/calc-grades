@@ -21,13 +21,13 @@ const GradeInput: React.FC<Props> = ({
       <NumberInput 
         onChange={handleChange}
         focusInputOnChange
+        inputMode='tel'
         defaultValue={6}
         precision={2}
         step={0.1}
         max={10}
         min={0}
         allowMouseWheel
-        getAriaValueText={((value) => value.toLocaleString('pt-BR'))}
       >
         <NumberInputField/>
         <NumberInputStepper>

@@ -55,10 +55,10 @@ const Footer = () => {
       as={Stack}
       maxW={'6xl'}
       py={4}
-      direction={{ base: 'column', md: 'column' }}
+      direction='column'
       spacing={4}
-      justify={{ base: 'center', md: 'center' }}
-      align={{ base: 'center', md: 'center' }}
+      justify='center'
+      align='center'
     >
       <Stack direction={'row'} spacing={6}>
         <SocialButton label={'YouTube'} href={'https://www.linkedin.com/in/andr%C3%A9moreno/'}>

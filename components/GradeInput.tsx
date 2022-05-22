@@ -1,9 +1,12 @@
-import { NumberInput, NumberInputField, NumberInputStepper, NumberIncrementStepper, NumberDecrementStepper, FormControl, FormLabel, FormHelperText, FormErrorMessage } from '@chakra-ui/react'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-
-
-type StringOrNumber = {valueAsString: string, valueAsNumber: number};
+import { 
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
+  FormControl,
+  FormLabel
+} from '@chakra-ui/react'
 
 type Props = {
   textContent: string;
@@ -14,14 +17,14 @@ const GradeInput: React.FC<Props> = ({
   textContent,
   handleChange
 }) => {
-
+  
   return (
-    <FormControl variant="floating" id="first-name">
+    <FormControl variant="floating">
       <FormLabel>{ textContent }</FormLabel>
       <NumberInput 
         onChange={handleChange}
         focusInputOnChange
-        inputMode='none'
+        inputMode='text'
         defaultValue={6}
         precision={2}
         step={0.1}

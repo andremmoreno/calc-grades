@@ -1,4 +1,4 @@
-import {Button, Flex, Heading, HStack, Input, useNumberInput, Text, NumberInput, NumberInputField, NumberInputStepper, NumberIncrementStepper, NumberDecrementStepper, Stack} from '@chakra-ui/react';
+import {Flex, Heading, HStack, Text, Stack} from '@chakra-ui/react';
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import { useCallback, useState } from 'react';
